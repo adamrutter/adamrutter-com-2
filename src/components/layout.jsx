@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap"
 import "../styles/bootstrap.scss"
-import Navbar from "./navbar"
+import Navbar from "./Navbar"
 import PropTypes from "prop-types"
 import React from "react"
 
