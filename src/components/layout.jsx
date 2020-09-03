@@ -1,4 +1,4 @@
-import "../styles/bootstrap.scss"
+import "../styles/main.scss"
 import Navbar from "./Navbar"
 import PropTypes from "prop-types"
 import React, { useEffect } from "react"
