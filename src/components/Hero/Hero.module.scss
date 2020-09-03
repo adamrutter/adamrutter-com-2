@@ -1,0 +1,50 @@
+.hero {
+  $color1: hsl(198, 44%, 11%);
+  $color2: hsl(195, 35%, 19%);
+  $color3: hsl(198, 39%, 28%);
+
+  background-color: black;
+  background-image: linear-gradient(to bottom, $color1, transparent),
+    radial-gradient(at top, $color3, transparent),
+    radial-gradient(at bottom right, $color2, transparent),
+    radial-gradient(at bottom left, $color1, transparent);
+  clip-path: ellipse(150% 100% at 50% 0%);
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100); // Mobile viewport height fix
+  position: relative;
+
+  .heading {
+    font-size: 1rem;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    top: calc(var(--vh, 1vh) * 50);
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 1.5rem;
+    }
+
+    h1 {
+      color: hsl(0, 0%, 90%);
+      font-size: 4em;
+      font-weight: 900;
+      line-height: 0.925;
+      text-shadow: 0 1px 0 hsl(0, 0%, 75%),
+        0 0.25rem 0.5rem hsla(0, 0%, 0%, 0.25),
+        0 0.2rem 0.33rem hsla(0, 0%, 0%, 0.33),
+        0 0.15rem 0.1rem hsla(0, 0%, 0%, 0.5), 0 -1px 0 white;
+    }
+
+    .sub {
+      opacity: 0.85;
+    }
+  }
+
+  .particles {
+    height: 100%;
+    width: 100%;
+  }
+}
