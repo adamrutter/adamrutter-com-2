@@ -1,0 +1,33 @@
+@import "../../styles/bootstrap";
+
+.divider {
+  margin: 1em 0;
+  position: relative;
+
+  &::before,
+  &::after {
+    border-top: 2px solid transparentize($color: $primary, $amount: 0.66);
+    content: "";
+    display: inline-block;
+    height: 0px;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 3.33rem;
+  }
+
+  &::before {
+    left: calc(50% - 3em);
+  }
+
+  &::after {
+    left: calc(50% + 3em);
+  }
+
+  .icon {
+    background: transparentize($color: $primary, $amount: 0.8);
+    border-radius: 50%;
+    margin: 0;
+    padding: 0.33rem;
+  }
+}
