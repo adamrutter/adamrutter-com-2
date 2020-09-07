@@ -15,15 +15,15 @@ const Component = () => (
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse>
         <Nav className={classNames("ml-auto")}>
-          <a className={classNames("nav-link")} href="/#about-me">
+          <Nav.Link className={classNames("text-light")} href="/#about-me">
             About Me
-          </a>
-          <a className={classNames("nav-link")} href="/#my-work">
+          </Nav.Link>
+          <Nav.Link className={classNames("text-light")} href="/#my-work">
             My Work
-          </a>
-          <a className={classNames("nav-link")} href="/#let-s-talk">
+          </Nav.Link>
+          <Nav.Link className={classNames("text-light")} href="/#let-s-talk">
             Let's Talk
-          </a>
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Container>
