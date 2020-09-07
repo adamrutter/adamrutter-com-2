@@ -1,5 +1,6 @@
 import { Container, Nav, Navbar } from "react-bootstrap"
 import classNames from "classnames"
+import Logo from "../../svg/logo.inline.svg"
 import React from "react"
 import styles from "./Navbar.module.scss"
 
@@ -11,7 +12,11 @@ const Component = () => (
     className={classNames(styles.navbar)}
   >
     <Container className={classNames("d-flex", "justify-content-between")}>
-      <Navbar.Brand>brand</Navbar.Brand>
+      <Navbar.Brand>
+        <Nav.Link href="/#">
+          <Logo className={classNames(styles.logo)} />
+        </Nav.Link>
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse>
         <Nav className={classNames("ml-auto")}>

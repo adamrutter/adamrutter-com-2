@@ -2,4 +2,10 @@
   position: absolute;
   width: 100%;
   z-index: 99;
+
+  .logo {
+    fill: white !important;
+    height: 1.25em;
+    width: 1.25em;
+  }
 }
