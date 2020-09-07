@@ -1,7 +1,9 @@
+@import "../../styles/bootstrap";
+
 .footer {
-  $color1: hsl(198, 44%, 11%);
-  $color2: hsl(195, 35%, 19%);
-  $color3: hsl(198, 39%, 28%);
+  $color1: $primary-3;
+  $color2: $primary-2;
+  $color3: $primary;
 
   background-color: black;
   background-image: linear-gradient(to bottom, $color1, transparent),
