@@ -1,4 +1,5 @@
 import "../styles/main.scss"
+import Footer from "./Footer"
 import Navbar from "./Navbar"
 import PropTypes from "prop-types"
 import React, { useEffect } from "react"
@@ -19,6 +20,7 @@ const Layout = ({ children }) => {
     <React.Fragment>
       <Navbar />
       {children}
+      <Footer />
     </React.Fragment>
   )
 }

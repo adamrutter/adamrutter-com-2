@@ -1,0 +1,28 @@
+.footer {
+  $color1: hsl(198, 44%, 11%);
+  $color2: hsl(195, 35%, 19%);
+  $color3: hsl(198, 39%, 28%);
+
+  background-color: black;
+  background-image: linear-gradient(to bottom, $color1, transparent),
+    radial-gradient(at top, $color3, transparent),
+    radial-gradient(at bottom right, $color2, transparent),
+    radial-gradient(at bottom left, $color1, transparent);
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  .content {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+  }
+  .bottom {
+    bottom: 0;
+    font-size: 0.8em;
+    position: absolute;
+  }
+}
