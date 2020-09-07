@@ -1,0 +1,13 @@
+@import "./bootstrap";
+
+@mixin hero-gradient {
+  $color1: $primary-3;
+  $color2: $primary-2;
+  $color3: $primary;
+
+  background-color: black;
+  background-image: linear-gradient(to bottom, $color1, transparent),
+    radial-gradient(at top, $color3, transparent),
+    radial-gradient(at bottom right, $color2, transparent),
+    radial-gradient(at bottom left, $color1, transparent);
+}
