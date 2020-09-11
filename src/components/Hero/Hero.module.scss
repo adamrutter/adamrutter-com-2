@@ -1,10 +1,6 @@
 @import "../../styles/bootstrap";
-@import "../../styles/hero-gradient";
 
 .hero {
-  @include hero-gradient;
-
-  clip-path: ellipse(150% 100% at 50% 0%);
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100); // Mobile viewport height fix
   position: relative;
@@ -24,18 +20,30 @@
     }
 
     h1 {
-      color: hsl(0, 0%, 90%);
       font-size: 4em;
       font-weight: 900;
       line-height: 0.925;
-      text-shadow: 0 1px 0 hsl(0, 0%, 75%),
-        0 0.25rem 0.5rem hsla(0, 0%, 0%, 0.25),
-        0 0.2rem 0.33rem hsla(0, 0%, 0%, 0.33),
-        0 0.15rem 0.1rem hsla(0, 0%, 0%, 0.5), 0 -1px 0 white;
     }
 
     .sub {
       opacity: 0.85;
+    }
+  }
+
+  .divider {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    width: 100%;
+
+    svg {
+      [class="top"] {
+        fill: $primary;
+      }
+
+      [class="bottom"] {
+        fill: white;
+      }
     }
   }
 }

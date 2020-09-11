@@ -2,9 +2,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import classNames from "classnames"
 import { Nav } from "react-bootstrap"
-import Particles from "../Particles"
 import React from "react"
 import styles from "./Footer.module.scss"
+import SvgDivider from "../../svg/section-divider.inline.svg"
 
 const Footer = () => {
   const year = () => {
@@ -13,6 +13,9 @@ const Footer = () => {
 
   return (
     <div className={classNames("bg-primary", styles.footer, "text-light")}>
+      <div className={classNames(styles.divider)}>
+        <SvgDivider />
+      </div>
       <div className={classNames(styles.content)}>
         <Nav className={classNames("justify-content-center")}>
           <Nav.Item>
@@ -71,7 +74,6 @@ const Footer = () => {
           </a>
         </span>
       </div>
-      <Particles />
     </div>
   )
 }
