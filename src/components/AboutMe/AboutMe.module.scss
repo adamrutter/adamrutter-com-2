@@ -1,60 +1,16 @@
 @import "../../styles/bootstrap";
 
 .about-me {
-  position: relative;
-
-  @include media-breakpoint-up("md") {
-    padding: 0 4em;
-  }
-
-  @include media-breakpoint-up("lg") {
-    padding: 0;
-  }
-
   ul {
     column-count: 2;
     list-style: url("/svg/code-square.svg");
   }
 
-  .row {
-    margin: 3em 0;
-    padding-bottom: 17vh;
+  svg {
+    height: 17em;
 
     @include media-breakpoint-up("lg") {
-      margin: 5em 0;
-      padding-bottom: 30vh;
-    }
-  }
-
-  .text {
-    @include media-breakpoint-up("lg") {
-      padding: 0 4rem;
-    }
-  }
-
-  .image-col {
-    position: relative;
-
-    svg {
-      height: 17em;
-      margin-top: 2em;
-
-      @include media-breakpoint-up("sm") {
-      }
-
-      @include media-breakpoint-up("md") {
-      }
-
-      @include media-breakpoint-up("lg") {
-        height: 20em;
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-      }
-
-      @include media-breakpoint-up("xl") {
-      }
+      height: 20em;
     }
   }
 }

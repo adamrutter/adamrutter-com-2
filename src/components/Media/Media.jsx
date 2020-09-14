@@ -2,9 +2,9 @@ import { Col, Row } from "react-bootstrap"
 import classNames from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
-import styles from "./AboutMe.module.scss"
+import styles from "./Media.module.scss"
 
-const Section = props => {
+const Media = props => {
   const image = {
     align: props.imageAlign === "left" ? "order-lg-1" : "order-lg-2",
   }
@@ -14,10 +14,8 @@ const Section = props => {
     padding: props.imageAlign === "left" ? "pl-lg-3" : "pr-lg-3",
   }
 
-  console.log(image)
-
   return (
-    <Row className={classNames(styles.row)}>
+    <Row className={classNames("align-items-center", styles.media)}>
       <Col className={classNames(styles.text, text.align)} lg={6}>
         {props.children}
       </Col>
@@ -26,6 +24,7 @@ const Section = props => {
           "align-items-start",
           "d-flex",
           image.align,
+          "image",
           "justify-content-center",
           "p-0",
           styles.imageCol
@@ -38,9 +37,9 @@ const Section = props => {
   )
 }
 
-Section.propTypes = {
+Media.propTypes = {
   image: PropTypes.element.isRequired,
   imageAlign: PropTypes.oneOf(["left", "right"]),
 }
 
-export default Section
+export default Media
