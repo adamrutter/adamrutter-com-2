@@ -11,7 +11,9 @@ const Hero = () => {
       className={classNames("bg-primary", styles.hero, "text-light", "p-0")}
     >
       <div className={classNames(styles.heading)}>
-        <h1 className={classNames("text-uppercase")}>Adam Rutter</h1>
+        <h1 className={classNames("text-uppercase", "text-white")}>
+          Adam Rutter
+        </h1>
         <p className={classNames(styles.sub)}>
           Front end Web Developer/Designer
         </p>

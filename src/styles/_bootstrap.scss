@@ -1,5 +1,27 @@
-$navbar-dark-toggler-border-color: transparent;
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
 
 $primary: #17365a;
+
+$theme-colors: (
+  // "primary": $primary,
+  "primary-light": scale-color($primary, $saturation: 25%, $lightness: 15%)
+);
+
+$body-bg: hsl(0, 0%, 97%);
+$body-color: hsl(222, 15%, 35%);
+
+$headings-color: scale-color($primary, $saturation: -10%, $lightness: 7.5%);
+
+$headings-line-height: 0.9;
+$headings-margin-bottom: $spacer;
+
+$link-color: theme-color("primary-light");
+
+$navbar-dark-toggler-border-color: transparent;
+
+.text-uppercase {
+  letter-spacing: 0.02em;
+}
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
