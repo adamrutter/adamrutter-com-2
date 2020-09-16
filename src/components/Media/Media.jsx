@@ -16,8 +16,8 @@ const Media = props => {
 
   return (
     <Row className={classNames("align-items-center", styles.media)}>
-      <Col className={classNames(styles.text, text.align)} lg={6}>
-        {props.children}
+      <Col className={classNames(text.align)} lg={6}>
+        <div className={classNames(styles.text)}>{props.children}</div>
       </Col>
       <Col
         className={classNames(
