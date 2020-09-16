@@ -1,0 +1,27 @@
+@import "../../styles/bootstrap";
+
+.my-work {
+  position: relative;
+
+  [class*="image"] {
+    svg {
+      height: 12.5em;
+      z-index: -1; // Ensure element is under text
+
+      @include media-breakpoint-up("lg") {
+        height: 13.5em;
+      }
+
+      @include media-breakpoint-up("xl") {
+        height: 15em;
+      }
+    }
+  }
+
+  .links {
+    .link-icon {
+      margin-right: 0.33em;
+      vertical-align: -0.125em;
+    }
+  }
+}
