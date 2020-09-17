@@ -13,10 +13,10 @@ const IndexPage = () => (
       <Hero />
     </header>
     <main>
-      <Section>
+      <Section id="about-me">
         <AboutMe />
       </Section>
-      <Section>
+      <Section id="my-work">
         <MyWork />
       </Section>
     </main>

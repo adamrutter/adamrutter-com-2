@@ -36,7 +36,7 @@ const MyWork = () => {
   `)
 
   return (
-    <div className={classNames(styles.myWork)} id="my-work">
+    <div className={classNames(styles.myWork)}>
       <h2 className={classNames("text-center", "text-primary")}>My Work</h2>
       <Divider icon={<Braces />} />
       {data.allMarkdownRemark.edges.map(edge => {

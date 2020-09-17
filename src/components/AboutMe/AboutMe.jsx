@@ -9,7 +9,7 @@ import SvgProgramming from "../../svg/programming-amico.inline.svg"
 
 const AboutMe = () => {
   return (
-    <div id="about-me" className={classNames(styles.aboutMe)}>
+    <div className={classNames(styles.aboutMe)}>
       <Media image={<SvgDeveloper />} imageAlign="left">
         <h3 className={classNames("h2")}>Hello!</h3>
         <p>
