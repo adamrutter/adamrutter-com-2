@@ -46,7 +46,11 @@ const MyWork = () => {
           project.frontmatter.order % 2 === 0 ? "left" : "right"
 
         return (
-          <Media image={<Device image={image} />} imageAlign={imageAlign}>
+          <Media
+            key={project.frontmatter.order}
+            image={<Device image={image} />}
+            imageAlign={imageAlign}
+          >
             <h3 className={classNames("h2")}>{project.frontmatter.title}</h3>
             <div dangerouslySetInnerHTML={{ __html: project.html }} />
             <div className={classNames("d-flex", "flex-wrap", styles.links)}>
