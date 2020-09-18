@@ -1,5 +1,16 @@
-$primary: #17365a;
-$secondary: scale-color($primary, $saturation: 25%, $lightness: 15%);
+$blue: hsl(212, 70%, 34%);
+$indigo: hsl(248, 70%, 34%);
+$purple: hsl(284, 70%, 34%);
+$pink: hsl(320, 70%, 34%);
+$red: hsl(356, 70%, 34%);
+$orange: hsl(32, 70%, 34%);
+$yellow: hsl(68, 70%, 34%);
+$green: hsl(104, 70%, 34%);
+$teal: hsl(140, 70%, 34%);
+$cyan: hsl(176, 70%, 34%);
+
+$primary: $blue;
+$secondary: scale-color($primary, $lightness: -40%);
 
 $border-radius: 2px;
 
@@ -9,12 +20,12 @@ $border-radius: 2px;
 $body-bg: hsl(0, 0%, 97%);
 $body-color: hsl(222, 15%, 35%);
 
-$headings-color: scale-color($primary, $saturation: -10%, $lightness: 7.5%);
+$headings-color: scale-color($secondary, $saturation: -10%, $lightness: 7.5%);
 
 $headings-line-height: 0.9;
 $headings-margin-bottom: $spacer;
 
-$link-color: $secondary;
+$link-color: $primary;
 
 $navbar-dark-toggler-border-color: transparent;
 

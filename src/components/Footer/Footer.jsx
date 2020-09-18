@@ -12,7 +12,7 @@ const Footer = () => {
   }
 
   return (
-    <div className={classNames("bg-primary", styles.footer, "text-light")}>
+    <div className={classNames("bg-secondary", styles.footer, "text-light")}>
       <div className={classNames(styles.divider)}>
         <SvgDivider />
       </div>

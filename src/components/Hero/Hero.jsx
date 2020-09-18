@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <Container
       fluid
-      className={classNames("bg-primary", styles.hero, "text-light", "p-0")}
+      className={classNames("bg-secondary", styles.hero, "text-light", "p-0")}
     >
       <div className={classNames(styles.heading)}>
         <h1 className={classNames("text-uppercase", "text-white")}>

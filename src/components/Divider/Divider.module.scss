@@ -6,7 +6,7 @@
 
   &::before,
   &::after {
-    border-top: 2px solid transparentize($color: $primary, $amount: 0.66);
+    border-top: 2px solid transparentize($color: $secondary, $amount: 0.66);
     content: "";
     display: inline-block;
     height: 0px;
