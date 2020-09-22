@@ -1,6 +1,8 @@
 import "../styles/main.scss"
+import { NotificationsContextProvider } from "../contexts/NotificationsContext"
 import Footer from "./Footer"
 import Navbar from "./Navbar"
+import Notifications from "./Notifications"
 import PropTypes from "prop-types"
 import React, { useEffect } from "react"
 
@@ -18,9 +20,12 @@ const Layout = ({ children }) => {
 
   return (
     <React.Fragment>
-      <Navbar />
-      {children}
-      <Footer />
+      <NotificationsContextProvider>
+        <Navbar />
+        {children}
+        <Footer />
+        <Notifications />
+      </NotificationsContextProvider>
     </React.Fragment>
   )
 }
