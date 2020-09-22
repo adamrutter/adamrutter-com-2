@@ -13,4 +13,8 @@
       height: 20em;
     }
   }
+
+  [class*="row"]:first-child {
+    margin-top: 0;
+  }
 }
