@@ -1,0 +1,44 @@
+$blue: hsl(212, 70%, 34%);
+$indigo: hsl(248, 70%, 34%);
+$purple: hsl(284, 70%, 34%);
+$pink: hsl(320, 70%, 34%);
+$red: hsl(356, 70%, 34%);
+$orange: hsl(32, 70%, 34%);
+$yellow: hsl(68, 70%, 34%);
+$green: hsl(104, 70%, 34%);
+$teal: hsl(140, 70%, 34%);
+$cyan: hsl(176, 70%, 34%);
+
+$primary: $blue;
+$secondary: scale-color($primary, $lightness: -40%);
+
+$border-radius: 2px;
+
+// Everything below here will have access to bootstrap variables referencing
+// above values
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+
+$body-bg: hsl(0, 0%, 97%);
+$body-color: hsl(222, 15%, 35%);
+
+$close-color: $white;
+$close-text-shadow: none;
+
+$headings-color: scale-color($secondary, $saturation: -10%, $lightness: 7.5%);
+
+$headings-line-height: 0.9;
+$headings-margin-bottom: $spacer;
+
+$input-bg: $body-bg;
+
+$link-color: $primary;
+
+$navbar-dark-toggler-border-color: transparent;
+
+$spinner-border-width-sm: 0.1em;
+
+$toast-background-color: $white;
+$toast-border-radius: $border-radius;
+$toast-border-width: 0;
