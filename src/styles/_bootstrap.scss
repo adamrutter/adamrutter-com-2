@@ -28,13 +28,22 @@ $headings-color: scale-color($secondary, $saturation: -10%, $lightness: 7.5%);
 $headings-line-height: 0.9;
 $headings-margin-bottom: $spacer;
 
+$input-bg: $body-bg;
+
 $link-color: $primary;
 
 $navbar-dark-toggler-border-color: transparent;
 
+$spinner-border-width-sm: 0.1em;
+
 $toast-background-color: $white;
 $toast-border-radius: $border-radius;
 $toast-border-width: 0;
+
+label {
+  color: $text-muted;
+  font-size: 0.8em;
+}
 
 .text-uppercase {
   letter-spacing: 0.02em;

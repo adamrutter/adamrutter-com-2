@@ -2,6 +2,7 @@ import AboutMe from "../components/AboutMe"
 import classNames from "classnames"
 import Hero from "../components/Hero"
 import Layout from "../components/layout"
+import LetsTalk from "../components/LetsTalk"
 import MyWork from "../components/MyWork"
 import React from "react"
 import SEO from "../components/seo"
@@ -13,12 +14,15 @@ const IndexPage = () => (
     <header>
       <Hero />
     </header>
-    <main className={classNames("px-2", "px-md-0")}>
+    <main className={classNames("mb-5", "px-2", "px-md-0")}>
       <Section id="about-me">
         <AboutMe />
       </Section>
       <Section id="my-work">
         <MyWork />
+      </Section>
+      <Section id="lets-talk">
+        <LetsTalk />
       </Section>
     </main>
   </Layout>

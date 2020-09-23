@@ -3,4 +3,10 @@
   right: 0;
   top: 0;
   z-index: 99;
+
+  a {
+    hyphens: auto;
+    word-break: break-word;
+    word-wrap: break-word;
+  }
 }
