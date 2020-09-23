@@ -1,13 +1,11 @@
-import Layout from "../components/layout"
-import React from "react"
-import SEO from "../components/seo"
+import { navigate } from "gatsby"
+import { useEffect } from "react"
 
-const NotFoundPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>Error: 404</p>
-  </Layout>
-)
+const NotFoundPage = () => {
+  useEffect(() => {
+    navigate("/")
+  }, [])
+  return null
+}
 
 export default NotFoundPage
