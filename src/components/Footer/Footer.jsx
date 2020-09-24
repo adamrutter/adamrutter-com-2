@@ -1,10 +1,9 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import classNames from "classnames"
 import { Nav } from "react-bootstrap"
 import React from "react"
 import styles from "./Footer.module.scss"
 import SvgDivider from "../../svg/section-divider.inline.svg"
+import SvgGithub from "../../svg/github_icon.inline.svg"
 
 const Footer = () => {
   const year = () => {
@@ -37,12 +36,12 @@ const Footer = () => {
         <Nav className={classNames("justify-content-center", "my-3")}>
           <Nav.Item>
             <Nav.Link
-              className={classNames("h4", "text-light")}
+              className={classNames("h4", "m-3", "text-light")}
               href="https://github.com/adamrutter/"
               rel="noreferrer"
               target="_blank"
             >
-              <FontAwesomeIcon icon={faGithub} />
+              <SvgGithub className={classNames(styles.linkIcon)} />
             </Nav.Link>
           </Nav.Item>
         </Nav>

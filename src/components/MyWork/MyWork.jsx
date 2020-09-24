@@ -1,6 +1,4 @@
 import { Braces, Globe } from "react-bootstrap-icons"
-import { faGithub } from "@fortawesome/free-brands-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useStaticQuery, graphql } from "gatsby"
 import classNames from "classnames"
 import Device from "./Device"
@@ -8,6 +6,7 @@ import Divider from "../Divider"
 import Media from "../Media"
 import React from "react"
 import styles from "./MyWork.module.scss"
+import SvgGithub from "../../svg/github_icon.inline.svg"
 
 const MyWork = () => {
   const data = useStaticQuery(graphql`
@@ -71,10 +70,7 @@ const MyWork = () => {
                   rel="noreferrer"
                   target="_blank"
                 >
-                  <FontAwesomeIcon
-                    className={classNames(styles.linkIcon)}
-                    icon={faGithub}
-                  />
+                  <SvgGithub className={classNames(styles.linkIcon)} />
                   View on Github
                 </a>
               )}
