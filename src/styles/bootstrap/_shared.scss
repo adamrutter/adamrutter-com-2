@@ -1,16 +1,16 @@
-$blue: hsl(212, 70%, 34%);
-$indigo: hsl(248, 70%, 34%);
-$purple: hsl(284, 70%, 34%);
-$pink: hsl(320, 70%, 34%);
-$red: hsl(356, 70%, 34%);
-$orange: hsl(32, 70%, 34%);
-$yellow: hsl(68, 70%, 34%);
-$green: hsl(104, 70%, 34%);
-$teal: hsl(140, 70%, 34%);
-$cyan: hsl(176, 70%, 34%);
+$blue: #378ecd;
+$indigo: #374ecd;
+$purple: #6137cd;
+$pink: #a137cd;
+$red: #cd374e;
+$orange: #cd6c37;
+$yellow: #cdb737;
+$green: #37cd4b;
+$teal: #37cd8c;
+$cyan: #37cdcc;
 
-$primary: $blue;
-$secondary: scale-color($primary, $lightness: -40%);
+$primary: $indigo;
+$secondary: scale-color($primary, $lightness: -25%);
 
 $border-radius: 2px;
 

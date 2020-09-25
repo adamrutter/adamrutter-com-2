@@ -1,5 +1,9 @@
 @import "./shared";
 
+:root {
+  --primary-images: #{$primary};
+}
+
 label {
   color: $text-muted;
   font-size: 0.8em;

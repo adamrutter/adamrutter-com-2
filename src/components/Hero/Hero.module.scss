@@ -1,6 +1,9 @@
 @import "../../styles/bootstrap/shared";
+@import "../../styles/hero-background";
 
 .hero {
+  @include hero-background;
+
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100); // Mobile viewport height fix
   margin-bottom: 15vh;
@@ -14,41 +17,59 @@
     font-size: 1rem;
     left: 50%;
     margin: 0;
+    max-width: 24em;
+    padding: 1em 4em;
     position: absolute;
     text-align: center;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
-    width: 100%;
+
+    @include media-breakpoint-up("sm") {
+      --border-size: 8px;
+      --corner-size: 48px;
+
+      border: var(--border-size) solid $white;
+      clip-path: polygon(
+        0 0,
+        var(--corner-size) 0,
+        var(--corner-size) calc(var(--border-size) + 1px),
+        calc(100% - var(--corner-size)) calc(var(--border-size) + 1px),
+        calc(100% - var(--corner-size)) 0,
+        100% 0,
+        100% var(--corner-size),
+        calc(100% - calc(var(--border-size) + 1px)) var(--corner-size),
+        calc(100% - calc(var(--border-size) + 1px))
+          calc(100% - var(--corner-size)),
+        100% calc(100% - var(--corner-size)),
+        100% 100%,
+        calc(100% - var(--corner-size)) 100%,
+        calc(100% - var(--corner-size))
+          calc(100% - calc(var(--border-size) + 1px)),
+        var(--corner-size) calc(100% - calc(var(--border-size) + 1px)),
+        var(--corner-size) 100%,
+        0 100%,
+        0 calc(100% - var(--corner-size)),
+        calc(var(--border-size) + 1px) calc(100% - var(--corner-size)),
+        calc(var(--border-size) + 1px) var(--corner-size),
+        0 var(--corner-size)
+      );
+    }
 
     @include media-breakpoint-up("md") {
+      --border-size: 12.5px;
+      --corner-size: 75px;
+
       font-size: 1.5rem;
     }
 
     h1 {
       font-size: 4em;
       font-weight: 900;
-      line-height: 0.925;
+      line-height: 0.85;
     }
 
     .sub {
       opacity: 0.85;
-    }
-  }
-
-  .divider {
-    position: absolute;
-    bottom: 0;
-    transform: translateY(50%);
-    width: 100%;
-
-    svg {
-      [class="top"] {
-        fill: $secondary;
-      }
-
-      [class="bottom"] {
-        fill: $body-bg;
-      }
     }
   }
 }

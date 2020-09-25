@@ -1,29 +1,15 @@
 @import "../../styles/bootstrap/shared";
+@import "../../styles/hero-background";
 
 .footer {
+  @include hero-background;
+
   height: 100vh;
   margin-top: 15vh;
   position: relative;
 
   @include media-breakpoint-up("lg") {
     margin-top: 25vh;
-  }
-
-  .divider {
-    position: absolute;
-    bottom: top;
-    transform: translateY(-50%);
-    width: 100%;
-
-    svg {
-      [class="top"] {
-        fill: $body-bg;
-      }
-
-      [class="bottom"] {
-        fill: $secondary;
-      }
-    }
   }
 
   .content {

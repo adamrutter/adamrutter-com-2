@@ -2,7 +2,6 @@ import classNames from "classnames"
 import { Nav } from "react-bootstrap"
 import React from "react"
 import styles from "./Footer.module.scss"
-import SvgDivider from "../../svg/section-divider.inline.svg"
 import SvgGithub from "../../svg/github_icon.inline.svg"
 
 const Footer = () => {
@@ -12,9 +11,6 @@ const Footer = () => {
 
   return (
     <div className={classNames("bg-secondary", styles.footer, "text-light")}>
-      <div className={classNames(styles.divider)}>
-        <SvgDivider />
-      </div>
       <div className={classNames(styles.content)}>
         <Nav className={classNames("justify-content-center")}>
           <Nav.Item>
