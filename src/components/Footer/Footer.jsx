@@ -45,7 +45,7 @@ const Footer = () => {
           <Nav.Item>
             <Nav.Link
               className={classNames("text-light")}
-              href="mailto:adam@adamrutter.com"
+              href="mailto:adam+site.contact@adamrutter.com"
               rel="noreferrer noopener"
               target="_blank"
             >
