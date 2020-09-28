@@ -98,6 +98,27 @@ const LetsTalk = () => {
             , or use the contact form below, and I’ll get back to you right
             away!
           </p>
+          <noscript>
+            <p
+              className={classNames(
+                "bg-danger",
+                "mx-auto",
+                "p-2",
+                "text-light"
+              )}
+            >
+              Please enable JavaScript to use this form, or alternatively email
+              me at{" "}
+              <a
+                className={classNames("font-weight-bold", "text-light")}
+                href="mailto:adam+site.contact@adamrutter.com"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                adam@adamrutter.com
+              </a>
+            </p>
+          </noscript>
           <Form noValidate onSubmit={handleSubmit} validated={validatedStyle}>
             <div
               aria-hidden="true"
