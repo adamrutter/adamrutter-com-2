@@ -24,8 +24,8 @@ const Footer = () => {
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className={classNames("text-light")} href="/#my-work">
-              My Work
+            <Nav.Link className={classNames("text-light")} href="/#lets-talk">
+              Let's Talk
             </Nav.Link>
           </Nav.Item>
         </Nav>
