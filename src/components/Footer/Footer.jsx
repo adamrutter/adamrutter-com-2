@@ -34,7 +34,7 @@ const Footer = () => {
             <Nav.Link
               className={classNames("h4", "m-3", "text-light")}
               href="https://github.com/adamrutter/"
-              rel="noreferrer"
+              rel="noreferrer noopener"
               target="_blank"
             >
               <SvgGithub className={classNames(styles.linkIcon)} />
@@ -46,7 +46,7 @@ const Footer = () => {
             <Nav.Link
               className={classNames("text-light")}
               href="mailto:adam@adamrutter.com"
-              rel="noreferrer"
+              rel="noreferrer noopener"
               target="_blank"
             >
               adam@adamrutter.com
@@ -62,7 +62,7 @@ const Footer = () => {
           <a
             className={classNames("text-light")}
             href="https://github.com/adamrutter/adamrutter-com"
-            rel="noreferrer"
+            rel="noreferrer noopener"
             target="_blank"
           >
             Source code

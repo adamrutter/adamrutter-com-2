@@ -57,7 +57,7 @@ const MyWork = () => {
                 <a
                   className={classNames("mr-4")}
                   href={project.frontmatter.siteLink}
-                  rel="noreferrer"
+                  rel="noreferrer noopener"
                   target="_blank"
                 >
                   <Globe className={classNames(styles.linkIcon)} />
@@ -67,7 +67,7 @@ const MyWork = () => {
               {project.frontmatter.repoLink && (
                 <a
                   href={project.frontmatter.repoLink}
-                  rel="noreferrer"
+                  rel="noreferrer noopener"
                   target="_blank"
                 >
                   <SvgGithub className={classNames(styles.linkIcon)} />

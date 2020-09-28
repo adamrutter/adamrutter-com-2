@@ -90,7 +90,7 @@ const LetsTalk = () => {
             me at{" "}
             <a
               href="mailto:adam+site.contact@adamrutter.com"
-              rel="noreferrer"
+              rel="noreferrer noopener"
               target="_blank"
             >
               adam@adamrutter.com
