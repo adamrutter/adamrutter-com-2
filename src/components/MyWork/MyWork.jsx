@@ -60,7 +60,10 @@ const MyWork = () => {
                   rel="noreferrer noopener"
                   target="_blank"
                 >
-                  <Globe className={classNames(styles.linkIcon)} />
+                  <Globe
+                    aria-hidden="true"
+                    className={classNames(styles.linkIcon)}
+                  />
                   Visit site
                 </a>
               )}
@@ -70,7 +73,10 @@ const MyWork = () => {
                   rel="noreferrer noopener"
                   target="_blank"
                 >
-                  <SvgGithub className={classNames(styles.linkIcon)} />
+                  <SvgGithub
+                    aria-hidden="true"
+                    className={classNames(styles.linkIcon)}
+                  />
                   View on Github
                 </a>
               )}
