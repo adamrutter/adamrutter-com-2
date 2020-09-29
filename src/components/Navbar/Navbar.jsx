@@ -18,7 +18,7 @@ const Component = () => (
         </Nav.Link>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse>
+      <Navbar.Collapse id="basic-navbar-nav">
         <Nav className={classNames("ml-auto")}>
           <Nav.Link className={classNames("text-light")} href="/#about-me">
             About Me
