@@ -63,8 +63,14 @@ const LetsTalk = () => {
             ...notifications,
             {
               heading: "Error",
-              msg:
-                "Unable to send your message. Please try again, or email me at <a class='font-weight-bold' href='mailto:adam@adamrutter.com'>adam@adamrutter.com</a>",
+              msg: (
+                <React.Fragment>
+                  Unable to send your message. Please try again, or email me at{" "}
+                  <a class="font-weight-bold" href="mailto:adam@adamrutter.com">
+                    adam@adamrutter.com
+                  </a>
+                </React.Fragment>
+              ),
               variant: "danger",
               visible: true,
             },

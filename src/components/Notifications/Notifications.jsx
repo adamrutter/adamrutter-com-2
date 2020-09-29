@@ -37,11 +37,7 @@ const Notifications = () => {
             >
               {notification.heading}
             </Toast.Header>
-            <Toast.Body>
-              {/* Using dangerouslySetInnerHTML to parse the email link in error 
-              message */}
-              <div dangerouslySetInnerHTML={{ __html: notification.msg }}></div>{" "}
-            </Toast.Body>
+            <Toast.Body>{notification.msg}</Toast.Body>
           </Toast>
         )
       })}
