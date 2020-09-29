@@ -11,7 +11,7 @@ const AboutMe = () => {
   return (
     <div className={classNames(styles.aboutMe)}>
       <Media image={<SvgDeveloper />} imageAlign="left">
-        <h3 className={classNames("h2")}>Hello!</h3>
+        <h2>Hello!</h2>
         <p>
           I’m Adam, Front-end Web Developer and Designer based near Chichester,
           West Sussex.
@@ -23,7 +23,7 @@ const AboutMe = () => {
         </p>
       </Media>
       <Media image={<SvgMobile />} imageAlign="right">
-        <h3 className={classNames("h2")}>Mobile first</h3>
+        <h2>Mobile first</h2>
         <p>
           I use a{" "}
           <span className={classNames("font-weight-bold")}>mobile-first</span>{" "}
@@ -34,7 +34,7 @@ const AboutMe = () => {
         </p>
       </Media>
       <Media image={<SvgFast />} imageAlign="left">
-        <h3 className={classNames("h2")}>Fast and perfomant</h3>
+        <h2>Fast and perfomant</h2>
         <p>
           I use modern development practices to cut down on complexity and
           dependencies to deliver websites that are{" "}
@@ -46,7 +46,7 @@ const AboutMe = () => {
         </p>
       </Media>
       <Media image={<SvgProgramming />} imageAlign="right">
-        <h3 className={classNames("h2")}>My experience</h3>
+        <h2>My experience</h2>
         <p>Some of the technologies I have experience using include:</p>
         <ul>
           <li>React</li>
