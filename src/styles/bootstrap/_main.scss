@@ -5,7 +5,7 @@
 }
 
 label {
-  color: $text-muted;
+  color: darken($text-muted, 1%);
   font-size: 0.8em;
 }
 
