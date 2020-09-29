@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://adamrutter.com`,
     title: `adamrutter.com`,
     description: `I'm Adam, a freelance front-end web developer/designer based in Chichester, West Sussex.`,
     author: `Adam Rutter`,
@@ -55,5 +56,6 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    `gatsby-plugin-sitemap`,
   ],
 }
