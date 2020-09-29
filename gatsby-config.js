@@ -24,7 +24,7 @@ module.exports = {
         short_name: `adamrutter.com`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#ffffff`,
+        theme_color: `#374ecd`,
         display: `minimal-ui`,
         icon: `src/svg/favicon.svg`,
       },
