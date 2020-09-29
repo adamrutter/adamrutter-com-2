@@ -13,7 +13,7 @@ const Component = () => (
   >
     <Container className={classNames("d-flex", "justify-content-between")}>
       <Navbar.Brand>
-        <Nav.Link href="/#">
+        <Nav.Link aria-label="Link to top of homepage" href="/#">
           <Logo className={classNames(styles.logo)} />
         </Nav.Link>
       </Navbar.Brand>

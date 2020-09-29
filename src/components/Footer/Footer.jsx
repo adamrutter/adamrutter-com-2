@@ -32,6 +32,7 @@ const Footer = () => {
         <Nav className={classNames("justify-content-center", "my-3")}>
           <Nav.Item>
             <Nav.Link
+              aria-label="Link to my Github profile"
               className={classNames("h4", "m-3", "text-light")}
               href="https://github.com/adamrutter/"
               rel="noreferrer noopener"
