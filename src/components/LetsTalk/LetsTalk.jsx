@@ -129,6 +129,7 @@ const LetsTalk = () => {
                 id="form-email"
                 onChange={e => setHoneypotValue(e.target.value)}
                 onInput={e => setHoneypotValue(e.target.value)}
+                tabindex="-1"
                 type="text"
               />
             </div>
