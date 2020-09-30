@@ -19,7 +19,7 @@ const AboutMe = () => {
         <p>
           I'm self taught, from the first line of code to modern web frameworks,
           and I've developed a passion for building performant, well designed
-          websites.
+          and accessible websites.
         </p>
       </Media>
       <Media image={<SvgMobile />} imageAlign="right">
@@ -51,16 +51,16 @@ const AboutMe = () => {
         <ul>
           <li>React</li>
           <li>Bootstrap</li>
-          <li>Hugo</li>
           <li>MongoDB</li>
-          <li>React</li>
-          <li>Bootstrap</li>
+          <li>Linux</li>
+          <li>Sass</li>
+          <li>Gatsby</li>
           <li>Hugo</li>
-          <li>MongoDB</li>
-          <li>React</li>
-          <li>Bootstrap</li>
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>Mongoose</li>
           <li>Hugo</li>
-          <li>MongoDB</li>
+          <li>Netlify</li>
         </ul>
       </Media>
     </div>
