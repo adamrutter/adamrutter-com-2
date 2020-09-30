@@ -2,6 +2,10 @@
 
 * {
   font-family: "Titillium Web";
+
+  :focus {
+    outline: 2px dashed $input-focus-border-color;
+  }
 }
 
 html {
