@@ -66,9 +66,14 @@
       font-size: 4em;
       font-weight: 900;
       line-height: 0.85;
+
+      // Correctly center overflowing text
+      display: flex;
+      justify-content: center;
     }
 
     .sub {
+      line-height: 1.25em;
       opacity: 0.85;
     }
   }
