@@ -1,7 +1,7 @@
 @import "./bootstrap/main";
 
 * {
-  font-family: "Titillium Web";
+  font-family: "Titillium Web", "Arial", "Helvetica", "sans-serif";
 
   :focus {
     outline: 2px dashed $input-focus-border-color;
@@ -24,6 +24,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Barlow";
+  font-family: "Barlow", "Roboto", "Arial", "Helvetica", "sans-serif";
   letter-spacing: -0.04em;
 }
