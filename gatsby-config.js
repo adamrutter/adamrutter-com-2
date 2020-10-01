@@ -56,5 +56,11 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
+    {
+      resolve: `gatsby-plugin-goatcounter`,
+      options: {
+        code: process.env.GOATCOUNTER_CODE,
+      },
+    },
   ],
 }
