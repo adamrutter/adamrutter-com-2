@@ -1,6 +1,6 @@
 ---
 title: "Rhythm"
-order: 1
+order: 2
 siteLink: "https://adamrutter.github.io/rhythm"
 repoLink: "https://github.com/adamrutter/rhythm"
 image: rhythm.png
