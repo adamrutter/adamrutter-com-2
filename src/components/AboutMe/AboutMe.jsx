@@ -34,7 +34,7 @@ const AboutMe = () => {
         </p>
       </Media>
       <Media image={<SvgFast />} imageAlign="left">
-        <h2>Fast and perfomant</h2>
+        <h2>Fast and performant</h2>
         <p>
           I use modern development practices to cut down on complexity and
           dependencies to deliver websites that are{" "}
