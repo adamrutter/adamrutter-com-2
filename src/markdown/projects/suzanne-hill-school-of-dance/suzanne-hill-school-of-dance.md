@@ -1,6 +1,6 @@
 ---
 title: "Suzanne Hill School of Dance"
-order: 0
+order: 1
 siteLink: "https://suzannehilldance.co.uk"
 image: suzanne-hill-school-of-dance.png
 ---
