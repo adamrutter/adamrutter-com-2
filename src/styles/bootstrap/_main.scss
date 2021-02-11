@@ -1,7 +1,7 @@
 @import "./shared";
 
 :root {
-  --primary-images: #{$primary};
+  --primary-images: #{adjust-color($primary, $saturation: 10, $lightness: 10)};
 }
 
 label {
