@@ -2,6 +2,8 @@
 
 :root {
   --primary-images: #{adjust-color($primary, $saturation: 10, $lightness: 10)};
+  --shadow-images: #{adjust-color($body-bg, $lightness: -9)};
+  --floor-images: #{adjust-color($body-bg, $lightness: -4)};
 }
 
 label {
