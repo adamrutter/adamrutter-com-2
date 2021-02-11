@@ -31,18 +31,11 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
-        fonts: [
-          {
-            family: `Barlow`,
-            variants: [`700`, `900`],
-          },
-          {
-            family: `Titillium Web`,
-            variants: [`400`, `400i`, `700`],
-          },
-        ],
+        google: {
+          families: ["Barlow:700,900", "Titillium Web:400,400i,700"],
+        },
       },
     },
     {
