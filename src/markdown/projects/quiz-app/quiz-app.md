@@ -6,4 +6,4 @@ repoLink: "https://github.com/adamrutter/quiz-app-client"
 image: quiz-app.png
 ---
 
-A multiplayer quiz app built made with React, Socket.IO, Typescript, Chakra UI, and Open Trivia Database.
+A multiplayer quiz app made with React, Socket.IO, Typescript, Chakra UI, and Open Trivia Database.
