@@ -10,9 +10,6 @@ const Hero = () => {
         <h1 className={classNames("text-uppercase", "text-white")}>
           Adam Rutter
         </h1>
-        <div className={classNames(styles.sub)}>
-          Front end Web Developer/Designer
-        </div>
       </div>
     </Container>
   )
